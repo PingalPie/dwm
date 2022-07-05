@@ -10,8 +10,7 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = {
 	"JetBrains Mono:size=12",
 	"JoyPixels:pixelsize=12:antialias=true:autohint:true",
-	"Hack Nerd Font:pixelsize=15:antialias=true:autohint=true",
-	"Symbola:pixelsize=15:antialias=true:autohint=true"
+	"Kruti-Dev"
 };
 static const char dmenufont[]       = "JetBrains mono:size=12";
 
