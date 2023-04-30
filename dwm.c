@@ -263,7 +263,7 @@ static int xerror(Display *dpy, XErrorEvent *ee);
 static int xerrordummy(Display *dpy, XErrorEvent *ee);
 static int xerrorstart(Display *dpy, XErrorEvent *ee);
 static void xrdb(const Arg *arg);
-void shiftview(const Arg *arg); 
+void shiftview(const Arg *arg);
 static void zoom(const Arg *arg);
 
 static pid_t getparentprocess(pid_t p);
@@ -532,7 +532,7 @@ buttonpress(XEvent *e)
 			click = ClkStatusText;
 		else
 			click = ClkWinTitle;
-	} else if ((c = wintoclient(ev->window))) {	
+	} else if ((c = wintoclient(ev->window))) {
 		focus(c);
 		restack(selmon);
 		XAllowEvents(dpy, ReplayPointer, CurrentTime);

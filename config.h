@@ -8,9 +8,8 @@ static const int swallowfloating    = 0;        /* 1 means swallow floating wind
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = {
-	"JetBrains Mono:size=12",
-	"JoyPixels:pixelsize=12:antialias=true:autohint:true",
-	"Kruti-Dev"
+	"JetBrainsMono Nerd Font Mono:size=12",
+	"JoyPixels:pixelsize=12:antialias=true:autohint:true"
 };
 static const char dmenufont[]       = "JetBrains mono:size=12";
 
@@ -93,7 +92,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	{ MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
 	{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_plus,  setgaps,        {.i = 0  } },
+	{ MODKEY|ShiftMask,             XK_plus,   setgaps,        {.i = 0  } },
+	{ MODKEY,	                XK_F5,     xrdb,        {.v = NULL } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
@@ -125,4 +125,3 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
